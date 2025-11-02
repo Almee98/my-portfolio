@@ -7,7 +7,7 @@ const projects = [
     },
     {
       name: "WeVote",
-      imageName: "${process.env.NEXT_PUBLIC_BASE_PATH}/assets/tutorstap_mentoring.png",
+      imageName: "${process.env.basePath}/assets/tutorstap_mentoring.png",
       description: "An open-source voting platform.",
       techStack: ["React", "Django", "PostgreSQL"],
     },
