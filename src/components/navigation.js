@@ -1,5 +1,11 @@
 'use client';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import { LinkedinIcon } from '../widgets/linkedin';
+import { GithubIcon } from '../widgets/github';
+import { LeetcodeIcon } from '../widgets/leetcode';
+import { DiscordIcon } from '../widgets/discord';
+import { MailIcon } from '../widgets/mail';
 
 export default function Navigation() {
   const items = ["ABOUT", "EXPERIENCE","PROJECTS"]; 
@@ -59,9 +65,9 @@ export default function Navigation() {
   }, []);
 
   return (
-    <nav className="fixed h-screen left-[10%] right-[65%] mt-20 flex flex-col justify-left pointer-events-none">
+    <nav className="fixed left-[10%] right-[65%] mt-20 flex flex-col justify-between pointer-events-none">
       <h1 className="text-5xl font-bold mb-2 text-left">Almee Christian</h1>
-      <h2 className="text-xl text-gray-300 mt-2 text-left">Software Engineer | Open Source Contributor</h2>
+      <h2 className="text-lg text-gray-300 mt-2 text-left">Software Engineer | Open Source Contributor</h2>
       <p className="text-gray-400 mt-4 max-w-2xl">
         Passionate about building scalable and efficient applications. I specialize in full-stack development with a focus on user experience and performance.
       </p>
@@ -84,13 +90,55 @@ export default function Navigation() {
               ${activeId == id ? "w-16 bg-teal-400" : "w-6 bg-white group-hover:w-16 group-hover:bg-teal-400"}`}>
               </span>
               <span className={`text-xs font-bold ml-2 transition-all duration-300 
-                ${activeId == id ? "ml-4 text-teal-400" :  "group-hover:ml-4 group-hover:text-teal-400"}`}>
+                ${activeId == id ? "ml-4 text-teal-400" : "group-hover:ml-4 group-hover:text-teal-400"}`}>
                 {item}
               </span>
             </a>
           );
         })}
       </nav>
+      <ul className="flex space-x-4 pt-24 md:justify-start md:mt-6 sm:mt-4 sm:flex-wrap">
+        <li>
+          <a href="https://www.linkedin.com/in/almee-christian/" target="_blank" rel="noopener noreferrer">
+            <LinkedinIcon
+              alt="LinkedIn"
+              className="w-6 h-6 opacity-70 group-hover:opacity-100 transition"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/almee" target="_blank" rel="noopener noreferrer">
+            <GithubIcon
+              alt="GitHub"
+              className="w-6 h-6 opacity-70 group-hover:opacity-100 transition"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://leetcode.com/almee/" target="_blank" rel="noopener noreferrer">
+            <LeetcodeIcon
+              alt="LeetCode"
+              className="w-6 h-6 fill-white opacity-70 group-hover:opacity-100 transition"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://discord.com/invite/almeechristian" target="_blank" rel="noopener noreferrer">
+            <DiscordIcon
+              alt="Discord"
+              className="w-6 h-6 stroke-2 text-white opacity-70 group-hover:opacity-100 transition"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:almeechristian@gmail.com">
+            <MailIcon
+              alt="Mail"
+              className="w-6 h-6 opacity-70 group-hover:opacity-100 transition"
+            />
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 }

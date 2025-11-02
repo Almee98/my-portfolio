@@ -23,11 +23,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@layer components {
+/* @layer components {
   .glass-hover {
     position: relative;
     overflow: hidden;
-    border-radius: 0.5rem; /* Rounded corners */
+    border-radius: 0.5rem; // Rounded corners 
   }
   .glass-hover .glass-overlay {
     position: absolute;
@@ -47,4 +47,4 @@ body {
     position: relative;
     z-index: 1;
   }
-}
+} */

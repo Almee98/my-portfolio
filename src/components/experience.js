@@ -1,12 +1,5 @@
-import { Arrow } from "../assets/arrow";
-
-function Tech({ techName }) {
-  return (
-    <div className="inline-block px-4 py-2 bg-[#2DD4BF]/10 text-center rounded-full mt-4">
-      <div className="text-sm text-[#5CEAD4]">{techName}</div>
-    </div>
-  );
-}
+import { Arrow } from "../widgets/arrow";
+import Tech from "./tech";
 
 export default function Experience({ company, role, description, techStack, timePeriod }) {
     return (
@@ -19,7 +12,7 @@ export default function Experience({ company, role, description, techStack, time
           </div>
             {/* Experience Details */}
           <div className="mb-4">
-            <h3 className="text-md text-white font-semibold transition-colors duration-300">
+            <h3 className="text-md text-[#E2E8F0] font-semibold transition-colors duration-300">
               <div>
                 <a href="#">
                   <span>{role} • {" "}
@@ -31,7 +24,7 @@ export default function Experience({ company, role, description, techStack, time
                 </a>
               </div>
             </h3>
-            <p className="text-gray-400 text-sm hover:text-white">{description}</p>
+            <p className="text-gray-400 text-sm">{description}</p>
               {/* Tech Pills */}
             <div className="flex flex-wrap gap-2 mt-4">
                 {techStack.map((tech) => (
