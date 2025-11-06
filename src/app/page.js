@@ -8,6 +8,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen text-white">
+      <head>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"></link>
+      </head>
 
       {/* Right scrollable content */}
       {/* Sections */}
