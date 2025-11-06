@@ -1,7 +1,6 @@
 import { Arrow } from "../widgets/arrow";
 import Tech from "./tech";
 import Image from "next/image";
-const basePath = process.env.NODE_ENV.basePath;
 
 export default function Project({ name, imageName, description, techStack }) {
     return (
@@ -11,7 +10,7 @@ export default function Project({ name, imageName, description, techStack }) {
           {/* Project Image */}
           <div className="text-left mt-1 pr-12">
             <Image
-              src={basePath/imageName}
+              src={imageName}
               alt={name}
               width={150}
               height={30}
