@@ -8,7 +8,7 @@ import { DiscordIcon } from '../widgets/discord';
 import { MailIcon } from '../widgets/mail';
 
 export default function Navigation() {
-  const items = ["ABOUT", "EXPERIENCE","PROJECTS"]; 
+  const items = ["About", "Experience","Projects"]; 
 
   const [activeId, setActiveId] = useState("about");
   // useEffect(() => {
@@ -65,14 +65,15 @@ export default function Navigation() {
   }, []);
 
   return (
-    <nav className="fixed left-[10%] right-[65%] mt-20 flex flex-col justify-between pointer-events-none">
-      <h1 className="text-5xl font-bold mb-2 text-left">Almee Christian</h1>
-      <h2 className="text-lg text-gray-300 mt-2 text-left">Software Engineer | Open Source Contributor</h2>
-      <p className="text-gray-400 mt-4 max-w-2xl">
+    <div className="relative pointer-events-auto">
+      {/* lg:fixed lg:left-[12%] xs:left-[80%] lg:right-[65%] */}
+      <h1 className="text-4xl sm:text-5xl text-gray-300 font-bold tracking-tight">Almee Christian</h1>
+      <h2 className="text-lg font-medium tracking-tight text-gray-300 mt-3 leading-normal sm:text-xl">Full Stack Engineer</h2>
+      <p className="text-gray-400 mt-4 max-w-xs">
         Passionate about building scalable and efficient applications. I specialize in full-stack development with a focus on user experience and performance.
       </p>
       <br/>
-      <nav className="space-y-6 text-lg pointer-events-auto">
+      <nav className="hidden lg:inline space-y-6 text-sm font-bold uppercase tracking-widest">
         {items.map((item) => {
           const id = item.toLowerCase();
           return (
@@ -97,48 +98,61 @@ export default function Navigation() {
           );
         })}
       </nav>
-      <ul className="flex space-x-4 pt-24 md:justify-start md:mt-6 sm:mt-4 sm:flex-wrap">
+      <ul className="flex space-x-4 md:justify-start ml-1 mt-8 lg:absolute lg:-bottom-63 lg:pb-0 lg:left-0 sm:flex-wrap">
         <li>
-          <a href="https://www.linkedin.com/in/almee-christian/" target="_blank" rel="noopener noreferrer">
-            <LinkedinIcon
-              alt="LinkedIn"
-              className="w-6 h-6 opacity-70 group-hover:opacity-100 transition"
-            />
+          <a
+            href="https://www.linkedin.com/in/almee-christian/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition-colors duration-300"
+            aria-label="LinkedIn profile"
+          >
+            <LinkedinIcon className='w-6 h-6' />
           </a>
         </li>
         <li>
-          <a href="https://github.com/almee" target="_blank" rel="noopener noreferrer">
-            <GithubIcon
-              alt="GitHub"
-              className="w-6 h-6 opacity-70 group-hover:opacity-100 transition"
-            />
+          <a
+            href="mailto:almeechristian@gmail.com"
+            className="text-gray-400 hover:text-white transition-colors duration-300"
+            aria-label='My e-mail address'
+          >
+            <MailIcon className="w-6 h-6" />
           </a>
         </li>
         <li>
-          <a href="https://leetcode.com/almee/" target="_blank" rel="noopener noreferrer">
-            <LeetcodeIcon
-              alt="LeetCode"
-              className="w-6 h-6 fill-white opacity-70 group-hover:opacity-100 transition"
-            />
+          <a
+            href="https://github.com/almee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition-colors duration-300"
+            aria-label="GitHub profile"
+          >
+            <GithubIcon className="w-6 h-6" />
           </a>
         </li>
         <li>
-          <a href="https://discord.com/invite/almeechristian" target="_blank" rel="noopener noreferrer">
-            <DiscordIcon
-              alt="Discord"
-              className="w-6 h-6 stroke-2 text-white opacity-70 group-hover:opacity-100 transition"
-            />
+          <a
+            href="https://discord.com/invite/almeechristian"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition-colors duration-300"
+            aria-label='Join my Discord'
+          >
+            <DiscordIcon className="w-6 h-6" />
           </a>
         </li>
         <li>
-          <a href="mailto:almeechristian@gmail.com">
-            <MailIcon
-              alt="Mail"
-              className="w-6 h-6 opacity-70 group-hover:opacity-100 transition"
-            />
+          <a
+            href="https://leetcode.com/almee/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition-colors duration-300"
+            aria-label='Leetcode Profile'
+          >
+            <LeetcodeIcon className="w-6 h-6" />
           </a>
         </li>
       </ul>
-    </nav>
+    </div>
   );
 }
