@@ -98,7 +98,7 @@ export default function Navigation() {
           );
         })}
       </nav>
-      <ul className="flex space-x-4 md:justify-start ml-1 mt-8 lg:absolute lg:-bottom-63 lg:pb-0 lg:left-0 sm:flex-wrap">
+      <ul className="flex flex-row w-full space-x-6 md:justify-start mt-8 lg:mt-53 sm:flex-wrap">
         <li>
           <a
             href="https://www.linkedin.com/in/almee-christian/"
