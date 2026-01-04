@@ -2,7 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Geist, Geist_Mono } from "next/font/google";
 import CursorGlow from "@/components/cursor_glow";
-import Navigation from "@/components/navigation";
+import LayoutWrapper from "@/components/layout-wrapper";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,16 +33,9 @@ export default function RootLayout({ children }) {
     <html className={`h-full scroll-smooth bg-[#0a192f] ${inter.variable} font-sans`}>
       <body className="leading-relaxed">
         <CursorGlow />
-        <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
-          <div className="lg:flex lg:justify-between lg:gap-4 flex flex-col lg:flex-row text-white">
-              <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24"><Navigation /></header>
-            {/* Right Content Area - Scrollable */}
-            <main id="content"
-            className="pt-24 lg:py-24 scroll-smooth lg:w-[52%] flex flex-col items-center">
+        <LayoutWrapper>
               {children}
-            </main>
-          </div>
-        </div>
+        </LayoutWrapper>
       </body>
     </html>
   );
