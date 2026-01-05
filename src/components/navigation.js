@@ -101,7 +101,7 @@ export default function Navigation() {
       <ul className="flex flex-row w-full space-x-6 md:justify-start mt-8 lg:mt-53 sm:flex-wrap">
         <li>
           <a
-            href="https://www.linkedin.com/in/almee-christian/"
+            href="https://www.linkedin.com/in/almee-christian-m/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors duration-300"
@@ -112,7 +112,7 @@ export default function Navigation() {
         </li>
         <li>
           <a
-            href="mailto:almeechristian@gmail.com"
+            href="mailto:almeechristian53@gmail.com"
             className="text-gray-400 hover:text-white transition-colors duration-300"
             aria-label='My e-mail address'
           >
@@ -121,7 +121,7 @@ export default function Navigation() {
         </li>
         <li>
           <a
-            href="https://github.com/almee"
+            href="https://github.com/almee98"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors duration-300"
@@ -144,7 +144,7 @@ export default function Navigation() {
         <li>
           <a
             href="https://leetcode.com/almee/"
-            target="_blank"
+            target="https://leetcode.com/u/Almee98/"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors duration-300"
             aria-label='Leetcode Profile'

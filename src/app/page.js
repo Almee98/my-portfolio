@@ -5,6 +5,7 @@ import experiences from "../data/experiences";
 import projects from "../data/projects";
 import Link from "next/link";
 import { ArrowRight } from "../widgets/arrow-right";
+import { Arrow } from "../widgets/arrow";
 
 export default function Home() {
 
@@ -28,6 +29,17 @@ export default function Home() {
           {experiences.slice(0, 6).map((exp, i) => (
             <Experience key={i} {...exp} />
           ))}
+        </div>
+        <div className="mt-8 px-4">
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="inline-flex items-center group text-[#5CEAD4] hover:text-white transition-colors duration-300 font-medium"
+          >
+            <span>View Full Résumé</span>
+            <Arrow className="inline-block pl-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+          </a>
         </div>
       </section>
 

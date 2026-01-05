@@ -1,21 +1,20 @@
 export default function About() {
     return (
         <div>
-            {/* <br/> */}
             <p className="opacity-50 mb-4">
-                I&apos;m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.
+                I’m a software engineer who enjoys building reliable, user-focused applications and working across the stack to turn ideas into shipped features. I’m especially interested in problems that sit at the intersection of frontend experience, backend logic, and system design.
             </p>
-            {/* <br/> */}
             <p className="opacity-50 mb-4">
-                Currently, I&apos;m a Senior Front-End Engineer at Klaviyo, specializing in accessibility. I contribute to the creation and maintenance of UI components that power Klaviyo&apos;s frontend, ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience.
+                Recently, I’ve been working on TutorsTap, a mentorship platform that connects learners with industry professionals. My work spans frontend development, backend APIs, cloud infrastructure, and automated testing, with a strong focus on building features that are maintainable, scalable, and grounded in real user needs.
             </p>
-            {/* <br/> */}
             <p className="opacity-50 mb-4">
-                In the past, I&apos;ve had the opportunity to develop software across a variety of settings — from advertising agencies and large corporations to start-ups and small digital product studios. Additionally, I also released a comprehensive video course a few years ago, guiding learners through building a web app with the Spotify API.
+                I also contribute to open-source projects such as WeVote and FreeCodeCamp, where I collaborate with distributed teams to improve UI behavior, accessibility, and application reliability. I value clear communication, thoughtful code reviews, and learning from real-world production systems.
             </p>
-            {/* <br/> */}
             <p className="opacity-50 mb-4">
-                In my spare time, I&apos;m usually climbing, reading, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds. I&apos;m always looking for new opportunities to learn and grow, so feel free to reach out if you&apos;d like to chat or collaborate!
+                Outside of engineering, I’ve held leadership and coordination roles that involved supporting teams, organizing work, and creating environments where people can do their best work. I bring that same sense of ownership and accountability into my engineering work.
+            </p>
+            <p className="opacity-50 mb-4">
+                I’m always looking to grow as an engineer and take on meaningful challenges, whether that’s improving an existing system, contributing to open source, or building new products from the ground up.
             </p>
         </div>
     );
