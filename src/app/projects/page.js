@@ -1,4 +1,4 @@
-import projects from "@/data/all-projects";
+import projects from "@/data/projects";
 import { Arrow } from "@/widgets/arrow";
 import { ArrowLeft } from "@/widgets/arrow-left";
 import Link from "next/link";
@@ -80,7 +80,9 @@ export default function ProjectsPage() {
                   <ul className="flex -translate-y-1.5 flex-wrap">
                     {project.techStack.map((tech) => (
                       <li key={tech} className="my-1 mr-1.5">
-                        <Tech techName={tech} />
+                        <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-normal leading-5 text-teal-300">
+                          {tech}
+                        </div>
                       </li>
                     ))}
                   </ul>

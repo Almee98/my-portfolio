@@ -20,14 +20,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Almee Christian | Software Engineer",
-  description: "Almee Christian is a software engineer focused on full-stack development, open-source contributions, and building scalable web applications.",
+  title: "Almee Christian",
+  description: "Almee Christian's Portfolio",
+  verification: {
+    name: 'google-site-verification',
+    content: "kWoD4SSAwRq80UQVJfdOByzzcfIItU7MBYmIAdpWgKk",
+  },
   icons: {
     icon: '/my-portfolio/favicon.ico',
     shortcut: '/my-portfolio/favicon.ico',
-  },
-  verification: {
-    google: "kWoD4SSAwRq80UQVJfdOByzzcfIItU7MBYmIAdpWgKk",
   },
 };
 
