@@ -23,7 +23,7 @@ export const metadata = {
   title: "Almee Christian",
   description: "Almee Christian's Portfolio",
   verification: {
-    google: "kWoD4SSAwRq80UQVJfdOByzzcfIItU7MBYmIAdpWgKk",
+    google: "gW2DAGQi1xmki_Ua5UwBw1g1wkJ9B_c5v0ff1GEiQig",
   },
   icons: {
     icon: '/my-portfolio/favicon.ico',
