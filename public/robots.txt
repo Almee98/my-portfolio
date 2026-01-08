@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://Almee98.github.io/my-portfolio/sitemap.xml
+Sitemap: https://almee98.github.io/my-portfolio/sitemap.xml
