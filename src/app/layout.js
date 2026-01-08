@@ -20,8 +20,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Almee Christian",
-  description: "Almee Christian's Portfolio",
+  title: {
+    default: "Almee Christian | Software Engineer",
+    template: "%s | Almee Christian",
+  },
+  description: "Almee Christian is a software engineer building reliable, user-focused applications and contributing to open-source projects.",
+  openGraph: {
+    type: "website",
+    url: "https://almee98.github.io/my-portfolio/",
+    title: "Almee Christian | Software Engineer",
+    description:
+      "Personal website of Almee Christian, software engineer focused on full-stack development and open-source contributions.",
+    siteName: "Almee Christian",
+  },
   verification: {
     google: "gW2DAGQi1xmki_Ua5UwBw1g1wkJ9B_c5v0ff1GEiQig",
   },
@@ -34,6 +45,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className={`h-full scroll-smooth bg-[#0a192f] ${inter.variable} font-sans`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Almee Christian",
+              url: "https://almee98.github.io/my-portfolio/",
+              jobTitle: "Software Engineer",
+              sameAs: [
+                "https://github.com/Almee98",
+                "https://www.linkedin.com/in/your-linkedin-username/"
+              ]
+            })
+          }}
+        />
+      </head>
       <body className="leading-relaxed">
         <CursorGlow />
         <LayoutWrapper>
