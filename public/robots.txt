@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://almee98.github.io/my-portfolio/sitemap.xml
