@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[2420,["500","static/chunks/500-5d45efbf86b8d36e.js","177","static/chunks/app/layout-1805ff769f7e7e68.js"],"default"]
+3:I[9562,["500","static/chunks/500-5d45efbf86b8d36e.js","177","static/chunks/app/layout-1805ff769f7e7e68.js"],"default"]
+4:I[7121,[],""]
+5:I[4581,[],""]
+:HL["/my-portfolio/_next/static/css/ff2a21d3437d2b61.css","style"]
+0:{"buildId":"33Xpl1uV5kWBTPWMESfhb","rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/my-portfolio/_next/static/css/ff2a21d3437d2b61.css","precedence":"next"}]],["$","html",null,{"className":"h-full scroll-smooth bg-[#0a192f] __variable_2d9031 font-sans","children":[["$","head",null,{"children":["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Almee Christian\",\"url\":\"https://almee98.github.io/my-portfolio/\",\"jobTitle\":\"Software Engineer\",\"sameAs\":[\"https://github.com/Almee98\",\"https://www.linkedin.com/in/your-linkedin-username/\"]}"}}]}],["$","body",null,{"className":"leading-relaxed","children":[["$","$L2",null,{}],["$","$L3",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]}]]}]]}]]}],"loading":null,"isPartial":false}
