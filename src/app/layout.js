@@ -20,25 +20,44 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://almeechristian.site"),
   title: {
     default: "Almee Christian | Software Engineer",
     template: "%s | Almee Christian",
   },
   description: "Almee Christian is a software engineer building reliable, user-focused applications and contributing to open-source projects.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
-    url: "https://almee98.github.io/my-portfolio/",
+    url: "https://almeechristian.site/",
     title: "Almee Christian | Software Engineer",
     description:
       "Personal website of Almee Christian, software engineer focused on full-stack development and open-source contributions.",
     siteName: "Almee Christian",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Almee Christian | Software Engineer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Almee Christian | Software Engineer",
+    description:
+      "Personal website of Almee Christian, software engineer focused on full-stack development and open-source contributions.",
+    images: ["/og.png"],
   },
   verification: {
     google: "gW2DAGQi1xmki_Ua5UwBw1g1wkJ9B_c5v0ff1GEiQig",
   },
   icons: {
-    icon: '/my-portfolio/favicon.ico',
-    shortcut: '/my-portfolio/favicon.ico',
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
   },
 };
 
@@ -53,11 +72,11 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Almee Christian",
-              url: "https://almee98.github.io/my-portfolio/",
+              url: "https://almeechristian.site/",
               jobTitle: "Software Engineer",
               sameAs: [
                 "https://github.com/Almee98",
-                "https://www.linkedin.com/in/your-linkedin-username/"
+                "https://www.linkedin.com/in/almee-christian-m/"
               ]
             })
           }}
