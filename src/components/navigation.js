@@ -8,7 +8,12 @@ import { DiscordIcon } from '../widgets/discord';
 import { MailIcon } from '../widgets/mail';
 
 export default function Navigation() {
-  const items = ["About", "Experience","Projects"]; 
+  const items = [
+    { label: "About", id: "about" },
+    { label: "Experience", id: "experience" },
+    { label: "Projects", id: "projects" },
+    { label: "Open Source", id: "open-source" },
+  ];
 
   const [activeId, setActiveId] = useState("about");
   // useEffect(() => {
@@ -29,7 +34,7 @@ export default function Navigation() {
   };
 
   useEffect(() => {
-    const sections = items.map((item) => document.querySelector(`#${item.toLowerCase()}`));
+    const sections = items.map((item) => document.querySelector(`#${item.id}`));
 
     const observer = new IntersectionObserver(
       // (entries) => {
@@ -75,10 +80,10 @@ export default function Navigation() {
       <br/>
       <nav className="hidden lg:inline space-y-6 text-sm font-bold uppercase tracking-widest">
         {items.map((item) => {
-          const id = item.toLowerCase();
+          const id = item.id;
           return (
             <a
-              key={item}
+              key={item.id}
               href={`#${id}`}
               onClick={(e) => {
                 e.preventDefault();
@@ -92,7 +97,7 @@ export default function Navigation() {
               </span>
               <span className={`text-xs font-bold ml-2 transition-all duration-300 
                 ${activeId == id ? "ml-4 text-teal-400" : "group-hover:ml-4 group-hover:text-teal-400"}`}>
-                {item}
+                {item.label}
               </span>
             </a>
           );
